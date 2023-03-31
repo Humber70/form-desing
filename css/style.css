@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap");
+
+body {
+  background-color: #161717;
+  width: 85%;
+  margin: 25px auto;
+}
+
+* {
+  color: white;
+  font-family: "Ubuntu";
+}
+
+/*--hedaer--*/
+.header {
+  width: 100%;
+}
+
+.header .logo {
+  width: 120px;
+}
+
+/*---contenedor principal MAIN---*/
+.container-main {
+  display: flex;
+  flex-direction: column;
+
+  gap: 2rem;
+}
+
+.login-google {
+  display: flex;
+  align-items: center;
+
+  gap: 1rem;
+}
+.container-main .login-google .google-btn {
+  display: flex;
+  align-items: center;
+
+  font-weight: 700;
+  border-radius: 6px;
+  background-color: #1a73e8;
+  cursor: pointer;
+}
+
+.container-main .login-google .google-btn:hover {
+  opacity: 0.7;
+}
+.container-main .login-google .google-btn span {
+  padding: 0px 48px;
+}
+
+.container-main .login-google .logo-google {
+  width: 35px;
+  padding: 3px 3px;
+  height: 90%;
+
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+}
+
+.login-google .twitter-btn {
+  /* padding: 8px 10px; */
+
+  border-radius: 7px;
+  background-color: rgb(155, 155, 155);
+}
+
+.login-google .twitter-btn img {
+  width: 15px;
+  padding: 0px 15px;
+  height: 37px;
+
+  cursor: pointer;
+}
+
+/*---divisor---*/
+.separator {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.separator span {
+  padding: 0px 20px;
+}
+
+hr {
+  flex-grow: 1;
+}
+
+.cont-username {
+  display: flex;
+  gap: 2rem;
+}
+.cont-userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="mail"] {
+  width: 100%;
+  background-color: #212121;
+  border-radius: 8px;
+  padding: 12px 5px;
+  outline: none;
+  border: none;
+  transition: background 0.4s ease;
+  margin: 7px 0px 2rem 0px;
+}
+input:hover {
+  background-color: #454045;
+  outline: 4px solid lightpink;
+}
+
+input:focus {
+  background-color: #454045;
+  outline: 2px solid lightpink;
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 15px 0px;
+  border: none;
+  outline: none;
+  background-color: #ea4c89;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  opacity: 0.8;
+}
+
+.check {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+input[type="checkbox"] {
+  outline: none;
+  width: 30px;
+  height: 25px;
+  display: inline-block;
+}
